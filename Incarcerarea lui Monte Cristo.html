@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2018 by chirovan5231 (http://jsbin.com/xegoson/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+<meta name="description" content="[PROIECTE  LA LIMBA SI LITERATURA  ROMANA  07.03.2018-MIHAI-up]">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Contele de Cristo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+
+<style id="jsbin-css">
+/* ==== A SIMPLE CSS RESET FROM ERIC MEYER ==== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ==== HELPER COLORS FOR LAYOUT ==== */
+
+/*.main-header {
+  background-color: rgba(255, 248, 53, .3);
+}
+
+.primary-content {
+  background-color: rgba(140, 96, 255, .3);
+}
+
+.post {
+  background-color: rgba(255, 0, 0, .3);
+}*/
+
+/* ==== BASE STYLES ==== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  font-family: Merriweather, 'Times New Roman', serif;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+h1 {
+	font-size: 1.8rem;
+}
+
+h2 {
+	font-size: 1.6rem;
+	color: #e5127d;
+}
+h3 {
+	font-size: 0.95rem;
+	color: #e5127d;
+letter-spacing: 0.12rem;
+line-height: 18px;
+}
+
+h4 {
+	font-size: 1.0rem;
+	color: 	#000010;
+        text-align: center;
+}
+.main-header p {
+	font-size: 1.125rem;
+	letter-spacing: 0.125rem;
+	color: #8c8e9b;
+}
+
+a {
+	color: #e5127d;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #b60e63;
+}
+
+/* ==== LAYOUT STYLES ==== */
+
+h1,h2,h3,h4,h5,h6,hgroup,
+ul,ol,dd,
+p,figure, img,
+pre,table,fieldset,hr,
+.main-header, .primary-content {
+    margin-bottom: 1rem;
+}
+
+/* Main Header Styles */
+.main-header {
+	text-align: center;
+	padding: 1.25rem;
+	color: #fff;
+	background-color: #42444e;
+}
+/*antetul să fie afișat în partea stângă, să ocupe o treime din ecran și să stea
+pe loc când derulăm în jos pe pagină LAYOTUL PENTRU TABLETA */
+@media (min-width: 768px) {
+
+			.main-header {
+					position: fixed;
+					top: 0;
+					height: 100%;
+					width: 33.3%;
+				}
+
+		}
+	
+/* Primary Content Wrapper Styles */
+
+@media (min-width: 768px) {
+
+	.primary-content {
+		float: right;
+		width: 66.6%;
+		max-width: 812px;
+	}
+
+  /*LAYOTUL PENTRU DESKTOP */
+  @media (min-width: 1025px) {
+
+	.main-header {
+		width: 25.625%;
+	}
+
+}
+  @media (min-width: 1025px) {
+
+	.primary-content {
+	float: none;
+	position: absolute;
+        left: 25.625%;
+			}
+
+		}
+	
+  
+  
+  }
+  
+@media (min-width: 48rem) {
+	.primary-content {
+		float: right;
+		width: 10.6%;
+		max-width: 812px;
+	}
+
+}
+
+
+@media (min-width: 20rem) {
+
+  .body {
+    display: inline-block;
+    border-bottom: none;
+    width: 7.5rem;
+  }}
+ @media (min-width: 30rem) {
+
+  .body {
+    display: inline-block;
+    border-bottom: none;
+    width: 7.5rem;
+  }}
+@media (min-width: 62rem) {
+
+  .body {
+    display: inline-block;
+    border-bottom: none;
+    width: 7.5rem;
+  }}
+
+@media (min-width: 64rem) {
+
+	.body {
+		float: none;
+		position: absolute;
+        left: 20.625%;
+	}
+
+}
+ @media (min-width: 75rem) {
+
+  .body {
+    display: inline-block;
+    border-bottom: none;
+    width: 7.5rem;
+  }}
+
+ 
+ 
+
+/* ==== COMPONENT STYLES ==== */
+
+.button {
+	display: inline-block;
+	border: 1px solid #8c8e9b;
+	color: #8c8e9b;
+	border-radius: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin: 5px;
+	width: 100px;
+	font-family: 'Open Sans', sans-serif;
+}
+ 
+@media (în cazul în care condiția este adevărată) {
+
+	aplică aceste stiluri
+
+}
+.button:hover {
+	border: 1px solid #b60e63;
+}
+
+.load {
+	display: block;
+	text-align: center;
+	padding: 0.625rem;
+	font-size: 1.25rem;
+	color: #8c8e9b;
+	cursor: pointer;
+}
+/* Base Styles */
+
+		aside,
+		section {
+			margin-right: 1.096%;
+		}
+
+		.container {
+			width: 95vw;
+			height: 50.13vh;
+			padding: 1.096%;
+		}
+
+		aside {
+			width: 33.3%;
+			height: 100%;
+			float: left;
+		}
+
+		section {
+			width: 33.3%;
+			height: 100%;
+			float: left;
+		}
+
+		@media (max-width: 420px) {
+
+			/* Demonstrational Styles */
+
+			aside,
+			section {
+				height: 48%;
+				margin-bottom: 1.096%;
+			}
+
+			/* Layout Styles */
+
+			aside,
+			section {
+				float: none;
+				width: auto;
+			}
+
+		}
+	
+
+
+
+                          /*--patratele--*/
+
+#dateContact {
+  width: 400px;
+  height: 550px;
+    margin: 50 auto;
+  box-shadow: 15px 15px 40px magenta;
+   margin-right: 30px;
+   margin-top: 80px;
+   margin-bottom:80px;
+}
+#dateContactFilm {
+  width: 800px;
+  height: 550px;
+    margin: 50 auto;
+  box-shadow: 15px 15px 40px magenta;
+   margin-right: 30px;
+   margin-top: 80px;
+   margin-bottom:80px;
+}
+
+/*se lasa spatiu probabil -rectifica apoi informatia -FRATE */
+
+ 
+.orange {
+  background-color: orange;
+}
+.linear-gradient {
+  background: linear-gradient(to right,
+      red, orange, yellow, green, blue, indigo, violet);
+}
+
+/*se muta la dreapta Patratul ROSU sau un patrat */
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+
+p {text-align: bottom;
+  padding: 5rem;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5rem;
+  padding: 0 .625rem;
+  color: rgba(255,10,17,.9);
+  text-align: center;
+}
+h1,h2 {text-align: center;
+color: rgba(200,0,255,.9);
+}
+ /* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+ img {
+  margin-bottom: 100px;
+  width: 405px;
+  height: 380px;
+  border-radius: 10px / 20px;
+  padding: 10px;
+  
+  
+}
+
+
+
+</style>
+</head>
+<body>
+
+<!--CONTOR VIZITATORI-->
+
+<script id="_waun16">var _wau = _wau || []; _wau.push(["tab", "60l9mbq2ss", "n16", "left-middle"]);</script><script async src="https://waust.at/t.js"></script>
+
+<header class="main-header">
+    <h1>PROIECTE  LA LIMBA SI LITERATURA  ROMANA  </h1>
+		<p> by Chirovan Mihai  </p>
+<p>C.N.N.B. Braila</p>
+<p> 2018 </p> 
+                 
+		<a href="https://mihai5231.github.io/SAPANTA/" class="button">HOME</a>
+		<a href="https://mihai5231.github.io/PRAID/" class="button">NEXT</a>
+
+<a href="https://mihai5231.github.io/SAPANTA/" class="button">Informatica</a>
+                 
+  </header>
+
+ 
+
+<div id="dateContact" class="right orange">
+ 
+<h2>"Contele de Monte-Cristo "
+</h2>
+<h4>"Scena debarcarii-incarcerarii lui Edmond Dantès, in  temnița Château d'If "
+</h4>
+<h3>Contele de Monte-Cristo (în franceză Le Comte de Monte-Cristo) este un roman publicat în 1844 de scriitorul francez Alexandre Dumas tatăl. Romanul povestește viața lui Édmond Dantes care a fost închis, fiind considerat informator al „Uzurpatorului” (Napoleon Bonaparte). A fost arestat de către autorități chiar în ziua logodnei sale cu Mércedes și dus la închisoarea din satul său, urmând ca apoi să fie judecat de către procurorul de Villefort.</h3>
+
+<p><i class="material-icons" style="font-size:88px;color:red;">cloud</i>
+<i class="material-icons" style="font-size:60px;color:lightblue;text-shadow:15px 25px 25px #000000;">cloud</i> </p>
+
+     </div>
+
+<div id="dateContact" class="right orange">
+<h1> Debarcarea lui Edmond Dantès </h1>
+<h3>  Edmond Dantès (n. 1796) — Dantès este inițial un marinar tânăr, apreciat și fără experiență, dar nu și în profesia lui, unde dă dovada de sârguința și pricepere. Soarta pare a-i surâde, are o logodnică, pe frumoasa Mercédès, și o promovare în gradul de căpitan de vas. După transformarea sa în contele de Monte-Cristo, numele său real este dezvăluit doar după ce se răzbună, celui care fusese pedepsit.
+Numărul 34 — La începutul perioadei în care Edmond Dantès stă în pușcărie, guvernatorul temniței Château d'If este înlocuit. Noul guvernator nu învață numele pușcăriașilor, ci li se adresează după numărul celulei, așadar Edmond Dantès este numit adesea numărul 34.
+Contele de Monte-Cristo — Contele de Monte-Cristo este persoana în care Edmond se metamorfozează când evadează și sub înfățișarea căruia se răzbună. </h3> 
+<p><i class="material-icons" style="font-size:88px;color:red;">cloud</i>
+<i class="material-icons" style="font-size:60px;color:lightblue;text-shadow:15px 25px 25px #000000;">cloud</i> </p>
+
+</div>
+
+<marquee bgcolor="GoldenRod ">Scena sosierii  lui Edmond Dantès, pe insula Château d'If  </marquee> 
+ </div>
+
+<div id="dateContactFilm" class="right orange">
+ <embed src="https://www.youtube.com/embed/kbNK-b4_OuE" allowfullscreen="true" width="790" height="540">
+ </div> 
+
+ </div>
+
+
+
+<marquee bgcolor="GoldenRod ">Temnita nr 34  de pe insula Château d'If  </marquee> 
+ </div>
+
+<div id="dateContactFilm" class="right orange">
+ <embed src="https://www.youtube.com/embed/3AOdPXBxsnQ" allowfullscreen="true" width="790" height="540">
+ </div> 
+
+<marquee bgcolor="GoldenRod ">Localizarea pe harta a insulei Château d'If </marquee> 
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23236.180179234416!2d5.32155644189915!3d43.282378012475455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c0bf33ff9b15%3A0x10dd415b34f5bd7e!2sCastelul+If!5e0!3m2!1sro!2sro!4v1520422387983" width="1250" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11598156.126209078!2d-1.8180124387629077!3d44.789345087795844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c0bf33ff9b15%3A0x10dd415b34f5bd7e!2sCastelul+If!5e0!3m2!1sro!2sro!4v1520422269326" width="1250" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+</body>
+</html>
